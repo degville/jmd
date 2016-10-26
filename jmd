@@ -4,7 +4,7 @@ import subprocess
 import sys
 
 JUJUEXE = "juju"
-ENCSTRING = "bash"
+ENCSTRING = "no-highlight"
 
 def parse_args(parser, args=None):
 #    if args is None:
