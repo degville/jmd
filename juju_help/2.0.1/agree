@@ -6,10 +6,6 @@ Agree to terms.
 Options:
 -B, --no-browser-login  (= false)
     Do not use web browser for authentication
---format  (= json)
-    Specify output format (json|yaml)
--o, --output (= "")
-    Specify an output file
 --yes  (= false)
     Agree to terms non interactively
 
