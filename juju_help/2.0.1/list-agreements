@@ -1,0 +1,17 @@
+Usage: juju agreements [options]
+
+Summary:
+List user's agreements.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--format  (= json)
+    Specify output format (json|yaml)
+-o, --output (= "")
+    Specify an output file
+
+Details:
+List terms the user has agreed to.
+
+Aliases: list-agreements

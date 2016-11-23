@@ -1,0 +1,15 @@
+Usage: juju set-budget [options] <budget name> <value>
+
+Summary:
+Set the budget limit.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+
+Details:
+Set the monthly budget limit.
+
+Examples:
+    # Sets the monthly limit for budget named 'personal' to 96.
+    juju set-budget personal 96

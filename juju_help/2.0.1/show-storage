@@ -1,0 +1,20 @@
+Usage: juju show-storage [options] <storage ID> [...]
+
+Summary:
+Shows storage instance information.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--format  (= yaml)
+    Specify output format (json|yaml)
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+-o, --output (= "")
+    Specify an output file
+
+Details:
+Show extended information about storage instances.
+Storage instances to display are specified by storage ids.
+
+* note use of positional arguments

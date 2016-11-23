@@ -1,0 +1,23 @@
+Usage: juju regions [options] <cloud>
+
+Summary:
+Lists regions for a given cloud.
+
+Options:
+--format  (= tabular)
+    Specify output format (json|tabular|yaml)
+-o, --output (= "")
+    Specify an output file
+
+Details:
+Examples:
+
+    juju regions aws
+
+See also:
+    add-cloud
+    clouds
+    show-cloud
+    update-clouds
+
+Aliases: list-regions

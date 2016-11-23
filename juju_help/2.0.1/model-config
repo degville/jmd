@@ -1,0 +1,35 @@
+Usage: juju model-config [options] [<model-key>[<=value>] ...]
+
+Summary:
+Displays or sets configuration values on a model.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--format  (= tabular)
+    Specify output format (json|tabular|yaml)
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+-o, --output (= "")
+    Specify an output file
+--reset  (= )
+    Reset the provided comma delimited keys
+
+Details:
+By default, all configuration (keys, source, and values) for the current model
+are displayed.
+
+Supplying one key name returns only the value for the key. Supplying key=value
+will set the supplied key to the supplied value, this can be repeated for
+multiple keys.
+
+Examples
+    juju model-config default-series
+    juju model-config -m mycontroller:mymodel
+    juju model-config ftp-proxy=10.0.0.1:8000
+    juju model-config -m othercontroller:mymodel default-series=yakkety test-mode=false
+    juju model-config --reset default-series test-mode
+
+See also:
+    models
+    model-defaults
