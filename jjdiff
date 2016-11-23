@@ -46,6 +46,11 @@ def main():
    # Create a text file containing the command help 
    with open((os.path.join(jujuvnumber,"commands")), "w") as command_file:
        command_file.write(jujuoutput)
+   
+   # Create a text file containing the version 
+   with open((os.path.join(jujuvnumber,"VERSION")), "w") as command_file:
+       command_file.write(jujuvnumber)
+
 
    # Output
    # print ("<!-- JUJUVERSION: " + jujuversion + " -->")
