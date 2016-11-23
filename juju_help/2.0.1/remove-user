@@ -1,0 +1,31 @@
+Usage: juju remove-user [options] <user name>
+
+Summary:
+Deletes a Juju user from a controller.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-c, --controller (= "")
+    Controller to operate in
+-y, --yes  (= false)
+    Confirm deletion of the user
+
+Details:
+This removes a user permanently.
+
+By default, the controller is the current controller.
+
+Examples:
+    juju remove-user bob
+    juju remove-user bob --yes
+
+See also: 
+    unregister
+    revoke
+    show-user
+    list-users
+    switch-user
+    disable-user
+    enable-user
+    change-user-password

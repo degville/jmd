@@ -1,0 +1,22 @@
+Usage: juju debug-hooks [options] <unit name> [hook names]
+
+Summary:
+Launch a tmux session to debug a hook.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+--no-host-key-checks  (= false)
+    Skip host key checking (INSECURE)
+--proxy  (= false)
+    Proxy through the API server
+--pty  (= true)
+    Enable pseudo-tty allocation
+
+Details:
+Interactively debug a hook remotely on an application unit.
+
+See the "juju help ssh" for information about SSH related options
+accepted by the debug-hooks command.

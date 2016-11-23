@@ -1,0 +1,20 @@
+Usage: juju budgets [options]
+
+Summary:
+List budgets.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--format  (= tabular)
+    Specify output format (json|tabular)
+-o, --output (= "")
+    Specify an output file
+
+Details:
+List the available budgets.
+
+Examples:
+    juju budgets
+
+Aliases: list-budgets

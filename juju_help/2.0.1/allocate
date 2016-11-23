@@ -1,0 +1,28 @@
+Usage: juju allocate [options] <budget>:<value> <application> [<application2> ...]
+
+Summary:
+Allocate budget to applications.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+--model-uuid (= "")
+    Model UUID of allocation
+
+Details:
+Allocate budget for the specified applications, replacing any prior allocations
+made for the specified applications.
+
+Examples:
+    # Assigns application "db" to an allocation on budget "somebudget" with
+    # the limit "42".
+    juju allocate somebudget:42 db
+
+    # Application names assume the current selected model, unless otherwise
+    # specified with:
+    juju allocate -m [<controller name:]<model name> ...
+
+    # Models may also be referenced by UUID when necessary:
+     juju allocate --model-uuid <uuid> ...

@@ -1,0 +1,52 @@
+Usage: juju sync-tools [options]
+
+Summary:
+Copy tools from the official tool store into a local model.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--all  (= false)
+    Copy all versions, not just the latest
+--destination (= "")
+    Local destination directory
+    DEPRECATED: use --local-dir instead
+--dev  (= false)
+    Consider development versions as well as released ones
+    DEPRECATED: use --stream instead
+--dry-run  (= false)
+    Don't copy, just print what would be copied
+--local-dir (= "")
+    Local destination directory
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+--public  (= false)
+    Tools are for a public cloud, so generate mirrors information
+--source (= "")
+    Local source directory
+--stream (= "")
+    Simplestreams stream for which to sync metadata
+--version (= "")
+    Copy a specific major[.minor] version
+
+Details:
+This copies the Juju agent software from the official tools store (located
+at https://streams.canonical.com/juju) into a model. It is generally done
+when the model is without Internet access.
+
+Instead of the above site, a local directory can be specified as source.
+The online store will, of course, need to be contacted at some point to get
+the software.
+
+Examples:
+    # Download the software (version auto-selected) to the model:
+    juju sync-tools --debug
+
+    # Download a specific version of the software locally:
+    juju sync-tools --debug --version 2.0 --local-dir=/home/ubuntu/sync-tools
+
+    # Get locally available software to the model:
+    juju sync-tools --debug --source=/home/ubuntu/sync-tools
+
+See also:
+    upgrade-juju

@@ -1,0 +1,29 @@
+Usage: juju gui [options]
+
+Summary:
+Open the Juju GUI in the default browser.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+--no-browser  (= false)
+    Do not try to open the web browser, just print the Juju GUI URL
+--show-credentials  (= false)
+    Show admin credentials to use for logging into the Juju GUI
+
+Details:
+Open the Juju GUI in the default browser:
+
+	juju gui
+
+Open the GUI and show admin credentials to use to log into it:
+
+	juju gui --show-credentials
+
+Do not open the browser, just output the GUI URL:
+
+	juju gui --no-browser
+
+An error is returned if the Juju GUI is not available in the controller.

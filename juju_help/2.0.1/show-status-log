@@ -1,0 +1,35 @@
+Usage: juju show-status-log [options] <entity name>
+
+Summary:
+Output past statuses for the specified entity.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--date (= "")
+    Returns logs for any date after the passed one, the expected date format is YYYY-MM-DD (cannot be combined with -n or --days)
+--days  (= 0)
+    Returns the logs for the past <days> days (cannot be combined with -n or --date)
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+-n  (= 0)
+    Returns the last N logs (cannot be combined with --days or --date)
+--type (= "unit")
+    Type of statuses to be displayed [agent|workload|combined|machine|machineInstance|container|containerinstance]
+--utc  (= false)
+    Display time as UTC in RFC3339 format
+
+Details:
+This command will report the history of status changes for
+a given entity.
+The statuses are available for the following types.
+-type supports:
+    juju-unit: will show statuses for the unit's juju agent.
+    workload: will show statuses for the unit's workload.
+    unit: will show workload and juju agent combined for the specified unit.
+    juju-machine: will show statuses for machine's juju agent.
+    machine: will show statuses for machines.
+    juju-container: will show statuses for the container's juju agent.
+    container: will show statuses for containers.
+ and sorted by time of occurrence.
+ The default is unit.

@@ -1,0 +1,36 @@
+Usage: juju restore-backup [options]
+
+Summary:
+Restore from a backup archive to a new controller.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-b  (= false)
+    Bootstrap a new state machine
+--build-agent  (= false)
+    Build binary agent if bootstraping a new machine
+--constraints (= "")
+    set model constraints
+--file (= "")
+    Provide a file to be used as the backup.
+--id (= "")
+    Provide the name of the backup to be restored
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+
+Details:
+Restores a backup that was previously created with "juju create-backup".
+
+This command creates a new controller and arranges for it to replace
+the previous controller for a model.  It does *not* restore
+an existing server to a previous state, but instead creates a new server
+with equivalent state.  As part of restore, all known instances are
+configured to treat the new controller as their master.
+
+The given constraints will be used to choose the new instance.
+
+If the provided state cannot be restored, this command will fail with
+an appropriate message.  For instance, if the existing bootstrap
+instance is already running then the command will fail with a message
+to that effect.

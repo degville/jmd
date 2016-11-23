@@ -1,0 +1,44 @@
+Usage: juju add-unit [options] <application name>
+
+Summary:
+Adds one or more units to a deployed application.
+
+Options:
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+-n, --num-units  (= 1)
+    Number of units to add
+--to (= "")
+    The machine and/or container to deploy the unit in (bypasses constraints)
+
+Details:
+Adding units to an existing application is a way to scale out that application. 
+Many charms will seamlessly support horizontal scaling, others may need an
+additional application to facilitate load-balancing (check the individual 
+charm documentation).
+This command is applied to applications that have already been deployed.
+By default, applications are deployed to newly provisioned machines in
+accordance with any application or model constraints. Alternatively, this 
+command also supports the placement directive ("--to") for targeting
+specific machines or containers, which will bypass any existing
+constraints.
+
+Examples:
+Add five units of wordpress on five new machines:
+
+    juju add-unit wordpress -n 5
+
+Add one unit of mysql to the existing machine 23:
+
+    juju add-unit mysql --to 23
+
+Create a new LXD container on machine 7 and add one unit of mysql:
+
+    juju add-unit mysql --to lxd:7
+
+Add a unit of mariadb to LXD container number 3 on machine 24:
+
+    juju add-unit mariadb --to 24/lxd/3
+
+See also: 
+    remove-unit

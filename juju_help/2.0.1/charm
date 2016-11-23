@@ -1,0 +1,19 @@
+Usage: juju charm [options] <command> ...
+
+Summary:
+Interact with charms.
+
+Options:
+--description  (= false)
+    
+-h, --help  (= false)
+    show help on a command or other topic
+
+Details:
+"juju charm" is the the juju CLI equivalent of the "charm" command used
+by charm authors, though only applicable functionality is mirrored.
+
+commands:
+    help           - show help on a command or other topic
+    list-resources - Alias for 'resources'.
+    resources      - display the resources for a charm in the charm store

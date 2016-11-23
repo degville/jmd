@@ -1,0 +1,12 @@
+Usage: juju add-relation [options] <application1>[:<endpoint name1>] <application2>[:<endpoint name2>]
+
+Summary:
+Add a relation between two application endpoints.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+
+Aliases: relate
