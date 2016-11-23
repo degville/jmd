@@ -55,7 +55,7 @@ Examples:
    juju add-machine lxd -n 2             (starts 2 new machines with an lxd container)
    juju add-machine lxd:4                (starts a new lxd container on machine 4)
    juju add-machine --constraints mem=8G (starts a machine with at least 8GB RAM)
-   juju add-machine ssh:user@10.10.0.3   (manually provisions a machine with ssh)
+   juju add-machine ssh:user@10.10.0.3   (manually provisions machine with ssh)
    juju add-machine zone=us-east-1a      (start a machine in zone us-east-1a on AWS)
    juju add-machine maas2.name           (acquire machine maas2.name on MAAS)
 
