@@ -1,0 +1,17 @@
+Usage: juju update-allocation [options] <application> <value>
+
+Summary:
+Update an allocation.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+
+Details:
+Updates an existing allocation on an application.
+
+Examples:
+    # Sets the allocation for the wordpress application to 10.
+    juju update-allocation wordpress 10

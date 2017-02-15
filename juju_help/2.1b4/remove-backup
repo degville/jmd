@@ -1,0 +1,13 @@
+Usage: juju remove-backup [options] <ID>
+
+Summary:
+Remove the spcified backup from remote storage.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+
+Details:
+remove-backup removes a backup from remote storage.

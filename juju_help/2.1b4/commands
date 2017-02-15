@@ -1,0 +1,146 @@
+actions                    List actions defined for a service.
+add-cloud                  Adds a user-defined cloud to Juju from among known cloud types.
+add-credential             Adds or replaces credentials for a cloud.
+add-machine                Start a new, empty machine and optionally a container, or add a container to a machine.
+add-model                  Adds a hosted model.
+add-relation               Add a relation between two application endpoints.
+add-space                  Add a new network space
+add-ssh-key                Adds a public SSH key to a model.
+add-storage                Adds unit storage dynamically.
+add-subnet                 Add an existing subnet to Juju.
+add-unit                   Adds one or more units to a deployed application.
+add-user                   Adds a Juju user to a controller.
+agree                      Agree to terms.
+agreements                 List user's agreements.
+allocate                   Allocate budget to applications.
+attach                     upload a file as a resource for an application
+autoload-credentials       Attempts to automatically add or replace credentials for a cloud.
+backups                    Displays information about all backups.
+bootstrap                  Initializes a cloud environment.
+budgets                    List budgets.
+cached-images              Shows cached os images.
+change-user-password       Changes the password for the current or specified Juju user
+charm                      Interact with charms.
+clouds                     Lists all clouds available to Juju.
+collect-metrics            Collect metrics on the given unit/application.
+config                     Gets, sets, or resets configuration for a deployed application.
+controller-config          Displays configuration settings for a controller.
+controllers                Lists all controllers.
+create-backup              Create a backup.
+create-budget              Create a new budget.
+create-storage-pool        Create or define a storage pool.
+credentials                Lists credentials for a cloud.
+debug-hooks                Launch a tmux session to debug a hook.
+debug-log                  Displays log messages for a model.
+deploy                     Deploy a new application or bundle.
+destroy-controller         Destroys a controller.
+destroy-model              Terminate all machines and resources for a non-controller model.
+disable-command            Disable commands for the model.
+disable-user               Disables a Juju user.
+disabled-commands          List disabled commands.
+download-backup            Get an archive file.
+enable-command             Enable commands that had been previously disabled.
+enable-destroy-controller  Enable destroy-controller by removing disabled commands in the controller.
+enable-ha                  Ensure that sufficient controllers exist to provide redundancy.
+enable-user                Re-enables a previously disabled Juju user.
+expose                     Makes an application publicly available over the network.
+get-constraints            Displays machine constraints for an application.
+get-model-constraints      Displays machine constraints for a model.
+grant                      Grants access level to a Juju user for a model or controller.
+gui                        Open the Juju GUI in the default browser.
+help                       show help on a command or other topic
+help-tool                  Show help on a Juju charm tool.
+import-ssh-key             Adds a public SSH key from a trusted identity source to a model.
+kill-controller            Forcibly terminate all machines and other associated resources for a Juju controller.
+list-actions               Alias for 'actions'.
+list-agreements            Alias for 'agreements'.
+list-backups               Alias for 'backups'.
+list-budgets               Alias for 'budgets'.
+list-cached-images         Alias for 'cached-images'.
+list-clouds                Alias for 'clouds'.
+list-controllers           Alias for 'controllers'.
+list-credentials           Alias for 'credentials'.
+list-disabled-commands     Alias for 'disabled-commands'.
+list-machines              Alias for 'machines'.
+list-models                Alias for 'models'.
+list-payloads              Alias for 'payloads'.
+list-plans                 Alias for 'plans'.
+list-regions               Alias for 'regions'.
+list-resources             Alias for 'resources'.
+list-spaces                Alias for 'spaces'.
+list-ssh-keys              Alias for 'ssh-keys'.
+list-storage               Alias for 'storage'.
+list-storage-pools         Alias for 'storage-pools'.
+list-subnets               Alias for 'subnets'.
+list-users                 Alias for 'users'.
+login                      Logs a user in to a controller.
+logout                     Logs a Juju user out of a controller.
+machines                   Lists machines in a model.
+metrics                    Retrieve metrics collected by specified entities.
+migrate                    Migrate a hosted model to another controller.
+model-config               Displays or sets configuration values on a model.
+model-defaults             Displays or sets default configuration settings for a model.
+models                     Lists models a user can access on a controller.
+payloads                   display status information about known payloads
+plans                      List plans.
+regions                    Lists regions for a given cloud.
+register                   Registers a controller.
+relate                     Alias for 'add-relation'.
+remove-application         Remove an application from the model.
+remove-backup              Remove the spcified backup from remote storage.
+remove-cached-images       Remove cached OS images.
+remove-cloud               Removes a user-defined cloud from Juju.
+remove-credential          Removes credentials for a cloud.
+remove-machine             Removes one or more machines from a model.
+remove-relation            Removes an existing relation between two applications.
+remove-ssh-key             Removes a public SSH key (or keys) from a model.
+remove-unit                Remove application units from the model.
+remove-user                Deletes a Juju user from a controller.
+resolved                   Marks unit errors resolved and re-executes failed hooks
+resources                  show the resources for a service or unit
+restore-backup             Restore from a backup archive to a new controller.
+retry-provisioning         Retries provisioning for failed machines.
+revoke                     Revokes access from a Juju user for a model or controller
+run                        Run the commands on the remote targets specified.
+run-action                 Queue an action for execution.
+scp                        Transfers files to/from a Juju machine.
+set-budget                 Set the budget limit.
+set-constraints            Sets machine constraints for an application.
+set-default-credential     Sets the default credentials for a cloud.
+set-default-region         Sets the default region for a cloud.
+set-meter-status           Sets the meter status on an application or unit.
+set-model-constraints      Sets machine constraints on a model.
+set-plan                   Set the plan for an application.
+show-action-output         Show results of an action by ID.
+show-action-status         Show results of all actions filtered by optional ID prefix.
+show-backup                Show metadata for the specified backup.
+show-budget                Show details about a budget.
+show-cloud                 Shows detailed information on a cloud.
+show-controller            Shows detailed information of a controller.
+show-machine               Show a machine's status.
+show-model                 Shows information about the current or specified model.
+show-status                Reports the current status of the model, machines, applications and units.
+show-status-log            Output past statuses for the specified entity.
+show-storage               Shows storage instance information.
+show-user                  Show information about a user.
+spaces                     List known spaces, including associated subnets
+ssh                        Initiates an SSH session or executes a command on a Juju machine.
+ssh-keys                   Lists the currently known SSH keys for the current (or specified) model.
+status                     Alias for 'show-status'.
+storage                    Lists storage details.
+storage-pools              List storage pools.
+subnets                    List subnets known to Juju.
+switch                     Selects or identifies the current controller and model.
+sync-tools                 Copy tools from the official tool store into a local model.
+unexpose                   Removes public availability over the network for an application.
+unregister                 Unregisters a Juju controller
+update-allocation          Update an allocation.
+update-clouds              Updates public cloud information available to Juju.
+update-credential          Updates a credential for a cloud.
+upgrade-charm              Upgrade an application's charm.
+upgrade-gui                Upgrade to a new Juju GUI version.
+upgrade-juju               Upgrades Juju on all machines in a model.
+upload-backup              Store a backup archive file remotely in Juju.
+users                      Lists Juju users allowed to connect to a controller or model.
+version                    print the current version
+whoami                     Print current login details

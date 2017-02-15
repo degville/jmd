@@ -1,0 +1,24 @@
+Usage: juju destroy-controller [options] <controller name>
+
+Summary:
+Destroys a controller.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--destroy-all-models  (= false)
+    Destroy all hosted models in the controller
+-y, --yes  (= false)
+    Do not ask for confirmation
+
+Details:
+All models (initial model plus all workload/hosted) associated with the
+controller will first need to be destroyed, either in advance, or by
+specifying `--destroy-all-models`.
+
+Examples:
+    juju destroy-controller --destroy-all-models mycontroller
+
+See also: 
+    kill-controller
+    unregister

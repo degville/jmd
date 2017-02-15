@@ -1,0 +1,15 @@
+Usage: juju create-budget [options]
+
+Summary:
+Create a new budget.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+
+Details:
+Create a new budget with monthly limit.
+
+Examples:
+    # Creates a budget named 'qa' with a limit of 42.
+    juju create-budget qa 42

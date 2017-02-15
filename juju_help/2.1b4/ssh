@@ -1,0 +1,49 @@
+Usage: juju ssh [options] <[user@]target> [command]
+
+Summary:
+Initiates an SSH session or executes a command on a Juju machine.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+--no-host-key-checks  (= false)
+    Skip host key checking (INSECURE)
+--proxy  (= false)
+    Proxy through the API server
+--pty  (= true)
+    Enable pseudo-tty allocation
+
+Details:
+The machine is identified by the <target> argument which is either a 'unit
+name' or a 'machine id'. Both are obtained in the output to "juju status". If
+'user' is specified then the connection is made to that user account;
+otherwise, the default 'ubuntu' account, created by Juju, is used.
+
+The optional command is executed on the remote machine. Any output is sent back
+to the user. Screen-based programs require the default of '--pty=true'.
+
+The SSH host keys of the target are verified. The --no-host-key-checks option
+can be used to disable these checks. Use of this option is not recommended as
+it opens up the possibility of a man-in-the-middle attack.
+
+Examples:
+Connect to machine 0:
+
+    juju ssh 0
+
+Connect to machine 1 and run command 'uname -a':
+
+    juju ssh 1 uname -a
+
+Connect to a mysql unit:
+
+    juju ssh mysql/0
+
+Connect to a jenkins unit as user jenkins:
+
+    juju ssh jenkins@jenkins/0
+
+See also: 
+    scp

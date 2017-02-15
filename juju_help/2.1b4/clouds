@@ -1,0 +1,30 @@
+Usage: juju clouds [options]
+
+Summary:
+Lists all clouds available to Juju.
+
+Options:
+--format  (= tabular)
+    Specify output format (json|tabular|yaml)
+-o, --output (= "")
+    Specify an output file
+
+Details:
+Provided information includes 'cloud' (as understood by Juju), cloud
+'type', and cloud 'regions'.
+The listing will consist of public clouds and any custom clouds made
+available through the `juju add-cloud` command. The former can be updated
+via the `juju update-cloud` command.
+By default, the tabular format is used.
+
+Examples:
+
+    juju clouds
+
+See also:
+    add-cloud
+    regions
+    show-cloud
+    update-clouds
+
+Aliases: list-clouds

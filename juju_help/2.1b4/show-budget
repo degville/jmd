@@ -1,0 +1,20 @@
+Usage: juju show-budget [options] <budget>
+
+Summary:
+Show details about a budget.
+
+Options:
+-B, --no-browser-login  (= false)
+    Do not use web browser for authentication
+--format  (= tabular)
+    Specify output format (json|tabular)
+-m, --model (= "")
+    Model to operate in. Accepts [<controller name>:]<model name>
+-o, --output (= "")
+    Specify an output file
+
+Details:
+Display budget usage information.
+
+Examples:
+    juju show-budget personal

@@ -1,0 +1,14 @@
+Usage: juju remove-cloud <cloud name>
+
+Summary:
+Removes a user-defined cloud from Juju.
+
+Details:
+Remove a named, user-defined cloud from Juju.
+
+Examples:
+    juju remove-cloud mycloud
+
+See also:
+    add-cloud
+    list-clouds
